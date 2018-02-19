@@ -1,4 +1,4 @@
-package amalhichri.androidprojects.com.kotlinlearning;
+package amalhichri.androidprojects.com.authenticationSample;
 
 import org.junit.Test;
 

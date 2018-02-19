@@ -1,4 +1,4 @@
-package amalhichri.androidprojects.com.kotlinlearning.models;
+package amalhichri.androidprojects.com.authenticationSample.models;
 
 /**
  * Created by Amal on 19/02/2018.

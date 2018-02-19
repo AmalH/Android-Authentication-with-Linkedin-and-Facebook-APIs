@@ -1,4 +1,4 @@
-package amalhichri.androidprojects.com.kotlinlearning;
+package amalhichri.androidprojects.com.authenticationSample;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

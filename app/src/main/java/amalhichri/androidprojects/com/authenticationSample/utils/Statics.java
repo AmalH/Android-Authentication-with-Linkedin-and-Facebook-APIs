@@ -1,4 +1,4 @@
-package amalhichri.androidprojects.com.kotlinlearning.utils;
+package amalhichri.androidprojects.com.authenticationSample.utils;
 
 import android.app.Activity;
 import android.content.Context;
@@ -25,8 +25,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import amalhichri.androidprojects.com.kotlinlearning.activities.HomeActivity;
-import amalhichri.androidprojects.com.kotlinlearning.models.User;
+import amalhichri.androidprojects.com.authenticationSample.activities.HomeActivity;
+import amalhichri.androidprojects.com.authenticationSample.models.User;
 
 /**
  * Created by Amal on 30/11/2017.

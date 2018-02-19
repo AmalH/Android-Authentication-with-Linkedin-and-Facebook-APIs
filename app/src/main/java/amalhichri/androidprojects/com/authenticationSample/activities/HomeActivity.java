@@ -1,12 +1,12 @@
-package amalhichri.androidprojects.com.kotlinlearning.activities;
+package amalhichri.androidprojects.com.authenticationSample.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import amalhichri.androidprojects.com.kotlinlearning.R;
-import amalhichri.androidprojects.com.kotlinlearning.utils.Statics;
+import amalhichri.androidprojects.com.authenticationSample.R;
+import amalhichri.androidprojects.com.authenticationSample.utils.Statics;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -28,13 +28,11 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this, MainActivity.class));
             }
         });
-
     }
 
     /** to prevent back to loginActivity **/
     @Override
     public void onBackPressed() {
     }
-
 
 }

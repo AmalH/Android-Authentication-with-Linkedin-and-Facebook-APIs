@@ -1,4 +1,4 @@
-package amalhichri.androidprojects.com.kotlinlearning.activities;
+package amalhichri.androidprojects.com.authenticationSample.activities;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.view.View;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-import amalhichri.androidprojects.com.kotlinlearning.R;
+import amalhichri.androidprojects.com.authenticationSample.R;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 

@@ -1,4 +1,4 @@
-package amalhichri.androidprojects.com.kotlinlearning.activities;
+package amalhichri.androidprojects.com.authenticationSample.activities;
 
 import android.app.Activity;
 import android.content.Context;
@@ -36,9 +36,9 @@ import org.json.JSONObject;
 
 import java.util.Arrays;
 
-import amalhichri.androidprojects.com.kotlinlearning.R;
-import amalhichri.androidprojects.com.kotlinlearning.models.User;
-import amalhichri.androidprojects.com.kotlinlearning.utils.Statics;
+import amalhichri.androidprojects.com.authenticationSample.R;
+import amalhichri.androidprojects.com.authenticationSample.models.User;
+import amalhichri.androidprojects.com.authenticationSample.utils.Statics;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 
