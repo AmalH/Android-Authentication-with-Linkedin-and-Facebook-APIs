@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("amalhichri.androidprojects.com.kotlinlearning", appContext.getPackageName());
+        assertEquals("amalhichri.androidprojects.com.authenticationSample", appContext.getPackageName());
     }
 }

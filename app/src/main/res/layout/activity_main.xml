@@ -30,7 +30,7 @@
             android:text="Login"
             android:textSize="8pt"
             android:textStyle="bold"
-            fontPath="fonts/graublau_slab_bold.ttf"
+            fontPath="fonts/graublau_slab.ttf"
             android:textColor="@color/base_color_2"
             android:background="@color/base_color_1"
             android:onClick="onClick"/>
@@ -42,7 +42,7 @@
             android:text="Create new account"
             android:textSize="8pt"
             android:textStyle="bold"
-            fontPath="fonts/graublau_slab_bold.ttf"
+            fontPath="fonts/graublau_slab.ttf"
             android:textColor="@color/base_color_1"
             android:background="@color/base_color_2"
             android:onClick="onClick"/>
