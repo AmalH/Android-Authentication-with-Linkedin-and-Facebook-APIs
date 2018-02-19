@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Authentication app sample</string>
+    <string name="facebook_app_id">1664966250256124</string>
+</resources>
