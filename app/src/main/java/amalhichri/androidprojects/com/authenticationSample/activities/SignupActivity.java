@@ -75,7 +75,7 @@ public class SignupActivity extends Activity {
             }
             @Override
             public void onApiError(LIApiError liApiError) {
-                Toast.makeText(getApplicationContext(), "cant connect to Linkedin", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), liApiError.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
         // managing api response

@@ -29,7 +29,7 @@ public class MainActivity extends Activity implements View.OnClickListener   {
         setContentView(R.layout.activity_main);
 
             // called only once to generate package hashKey for Linkedin app
-        //generateHashkey();
+        generateHashkey();
 
 
         /** if user is logged in --> homeActivity**/
