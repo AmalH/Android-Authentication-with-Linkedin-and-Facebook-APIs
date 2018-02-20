@@ -37,6 +37,12 @@ dependencies {
     // password visibiuk.co.chrisjenx:calligraphlity toggle
     compile 'com.github.scottyab:showhidepasswordedittext:0.8'
 
+    // circular imageView
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+
+    // to set imageView's src with url
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
     // firebase core
     compile "com.google.firebase:firebase-core:11.8.0"
     // firebase authentification

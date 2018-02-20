@@ -16,8 +16,11 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.gson.Gson;
 import com.rey.material.widget.EditText;
 
@@ -84,6 +87,23 @@ public class Statics {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(activity, "logged in", Toast.LENGTH_LONG).show();
+
+                            /** adding current user to sharedPreferences **/
+                            Statics.usersTable.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(DataSnapshot dataSnapshot) {
+                                    SharedPreferences loggedUserPrefs = activity.getApplicationContext().getSharedPreferences("loggedUserPrefs",0);
+                                    String loggedUser = (new Gson()).toJson(dataSnapshot.getValue(User.class));
+                                    SharedPreferences.Editor e=loggedUserPrefs.edit();
+                                    e.putString("user",loggedUser);
+                                    e.commit();
+                                }
+
+                                @Override
+                                public void onCancelled(DatabaseError databaseError) {
+                                    throw databaseError.toException();
+                                }
+                            });
                             activity.startActivity(new Intent(activity, HomeActivity.class));
                         } else {
                             Toast.makeText(activity, task.getException().getMessage(), Toast.LENGTH_LONG).show();
